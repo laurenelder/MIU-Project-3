@@ -1,0 +1,110 @@
+/* Devin "Lauren" Elder */
+/* MIU Term 1301 */
+/* Project 2 */
+/* 01/10/2013 */
+
+body {
+	background-color: #FFF7EA;
+}
+
+h1 {
+	color: #000000;
+	background-color: #E8D9C9;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: Edwardian Script ITC, Noteworthy;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #A8AFB4;
+}
+
+h2 {
+	font-family: Edwardian Script ITC, Noteworthy;
+	font-weight: normal;
+	font-size: 34px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+a {
+	vertical-align: center;
+}
+
+nav {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: -15px;
+}
+
+input[type="text"] {
+	border: 1px solid black;
+	padding: 5px;
+	margin-left: 5px;
+}
+
+input[type="search"] {
+	border: 1px solid black;
+	padding: 5px;
+	margin-left: 2px;
+	height: 35px;
+	width: 200px;
+}
+
+img {
+	margin-left: 0px;
+}
+
+ul {
+	margin-top: 15px;
+}
+
+p {
+	font-family: Lucida Calligraphy, Noteworthy;
+	font-size: 16px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+div {
+	display: inline;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+button {
+	display: block;
+	font-family: Lucida Calligraphy, Noteworthy;
+	font-size: 14px;
+	padding: 5px;
+	margin-bottom: 10px;
+	height: 35px;
+	width: 300px;
+	vertical-align: center;
+}
+
+fieldset {
+	color: #000000;
+	background-color: #E8D9C9;
+	margin-top: -20px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px #B2BABF;
+}
+
+legend {
+	font-family: Lucida Calligraphy, Noteworthy;
+	font-size: 18px;
+}
+
+li {
+	font-family: Lucida Calligraphy, Noteworthy;
+	font-size: 14px;
+	list-style-type: none;
+	margin-left: -20px;
+}

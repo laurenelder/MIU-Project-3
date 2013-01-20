@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!-- Devin "Lauren" Elder-->
+<!-- MIU Term 1301-->
+<!-- Project 2-->
+<!-- 01/10/2013-->
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Remember users on dating websites" />
+		<meta name="keywords" content="online dating, date, remember people" />
+		<meta name="robots" content="index, nofollow" />
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<title>Remember Who?</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+	</head>
+
+	<body>
+
+		<!-- Home Page-->
+		<div data-role="page" id="homePage">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Remember Who</h1>
+			</div>
+			<a href="additem.html" data-ajax="false" data-inset="true" title="Add a User" name="cta"><img src="img/indexImage.png"></a>
+			<div>
+				<p>Search Users: <input type="search" data-filter="true"/></p>
+			</div>
+			<h3>Browse Users By...</h3>
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><a href="#genderCatPage" data-role="button"><strong><br>Gender</strong></a></div>
+				<div class="ui-block-b"><a href="#orientationCatPage" data-role="button"><strong>Sexual<br>Orientation</strong></a></div>
+				<div class="ui-block-c"><a href="#kidsCatPage" data-role="button"><strong><br>Children</strong></a></div>
+				<div class="ui-block-d"><a href="#miscCatPage" data-role="button"><strong><br>Misc</strong></a></div>
+			</div>
+			<br>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add a User</a></li>
+						<li><a href="#resultsPage" id="favorites" data-icon="star">Favorites</a></li>
+						<li><a href="#aboutPage" data-icon="info" data-iconpos="right">About Page</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- About Page-->
+		<div data-role="page" id="aboutPage" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Remember Who</h1>
+			</div>
+			<div>
+				<p>Search Users: <input type="search" data-filter="true"/></p>
+			</div>
+			<div>
+				<h2>About Links</h2>
+				<p><a href="#infoPage" data-role="button" data-icon="arrow-r" data-iconpos="right">Info Page</a></p>
+				<p><a href="subCatagories/orientationSubCatagory.html" data-role="button" data-icon="arrow-r" data-iconpos="right">Github Link</a></p>
+				<p><a href="../Bronze App/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right">Bronze Application</a></p>
+				<p><a href="#homePage" data-role="button" data-icon="arrow-r" data-iconpos="right">Home Page</a></p>
+			</div>
+			<br>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home">Home</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add a User</a></li>
+						<li><a href="#resultsPage" id="favorites" data-icon="star">Favorites</a></li>
+						<li><a href="#aboutPage" data-icon="info" data-iconpos="right"class="ui-btn-active">About Page</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Info Page-->
+		<div data-role="page" id="infoPage" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Remember Who</h1>
+			</div>
+			<div>
+				<p>Search Users: <input type="search" /></p>
+			</div>
+				<h2>About This Application</h2>
+			<article>
+				<p id="description">Remember Who? is an app that gives you quick and easy access to general information about users you have met on online dating sites. Sometimes quite a bit of time passes before talking to the same user again and with this app you can see an overview of the previous people you have talked to without having to search through profiles to find the same information.</p>
+				<br>
+				<p>Images Provided By...</p>
+				<p>Image courtesy of adamr / <a href="http://www.freedigitalphotos.net" target="_blank">FreeDigitalPhotos.net</a></p>
+			</article>
+			<br>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home">Home</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add a User</a></li>
+						<li><a href="#resultsPage" id="favorites" data-icon="star">Favorites</a></li>
+						<li><a href="#aboutPage" data-icon="info" data-iconpos="right">About Page</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Gender Subcategory Page-->
+		<div data-role="page" id="genderCatPage" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Remember Who</h1>
+			</div>
+			<div>
+				<p>Search Users: <input type="search" data-filter="true"/></p>
+			</div>
+			<div>
+				<h2>Gender</h2>
+				<ul data-role="listview" data-inset="true">
+				<li><a href="#resultsPage" id="browseMale" data-icon="arrow-r" data-iconpos="right">Male</a></li>
+				<li><a href="#resultsPage" id="browseFemale" data-icon="arrow-r" data-iconpos="right">Female</a></li>
+			</ul>
+			</div>
+			<br>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home">Home</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add a User</a></li>
+						<li><a href="#resultsPage" id="favorites" data-icon="star">Favorites</a></li>
+						<li><a href="#aboutPage" data-icon="info" data-iconpos="right">About Page</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+				<!-- Orientation Subcategory Page-->
+		<div data-role="page" id="orientationCatPage" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Remember Who</h1>
+			</div>
+			<div>
+				<p>Search Users: <input type="search" data-filter="true"/></p>
+			</div>
+			<div>
+				<h2>Sexual Orientation</h2>
+				<p><a href="#resultsPage" id="browseStraight" data-role="button" data-icon="arrow-r" data-iconpos="right">Straight</a></p>
+				<p><a href="#resultsPage" id="browseBisexual" data-role="button" data-icon="arrow-r" data-iconpos="right">Bisexual</a></p>
+				<p><a href="#resultsPage" id="browseGay" data-role="button" data-icon="arrow-r" data-iconpos="right">Gay</a></p>
+			</div>
+			<br>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home">Home</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add a User</a></li>
+						<li><a href="#resultsPage" id="favorites" data-icon="star">Favorites</a></li>
+						<li><a href="#aboutPage" data-icon="info" data-iconpos="right">About Page</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+				<!-- Children Subcategory Page-->
+		<div data-role="page" id="kidsCatPage" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Remember Who</h1>
+			</div>
+			<div>
+				<p>Search Users: <input type="search" data-filter="true"/></p>
+			</div>
+			<div>
+				<h2>Children</h2>
+				<p><a href="#resultsPage" id="browseHasKids" data-role="button" data-icon="arrow-r" data-iconpos="right">Has Kids</a></p>
+				<p><a href="#resultsPage" id="browseWantsKids" data-role="button" data-icon="arrow-r" data-iconpos="right">Wants Kids</a></p>
+			</div>
+			<br>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home">Home</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add a User</a></li>
+						<li><a href="#resultsPage" id="favorites" data-icon="star">Favorites</a></li>
+						<li><a href="#aboutPage" data-icon="info" data-iconpos="right">About Page</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+				<!-- Misc Subcategory Page-->
+		<div data-role="page" id="miscCatPage" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Remember Who</h1>
+			</div>
+			<div>
+				<p>Search Users: <input type="search" data-filter="true"/></p>
+			</div>
+			<div>
+				<h2>Miscellaneous</h2>
+				<p><a href="#resultsPage" id="browseVehicle" data-role="button" data-icon="arrow-r" data-iconpos="right">Has Vehicle</a></p>
+				<p><a href="#resultsPage" id="browseInterests" data-role="button" data-icon="arrow-r" data-iconpos="right">Has Shared Interests</a></p>
+				<p><a href="#resultsPage" id="browseStable" data-role="button" data-icon="arrow-r" data-iconpos="right">Financially Stable</a></p>
+				<p><a href="#resultsPage" id="browseDrinks" data-role="button" data-icon="arrow-r" data-iconpos="right">Drinks</a></p>
+				<p><a href="#resultsPage" id="browseSmokes" data-role="button" data-icon="arrow-r" data-iconpos="right">Smokes</a></p>
+				<p><a href="#resultsPage" id="browsePets" data-role="button" data-icon="arrow-r" data-iconpos="right">Has Pets</a></p>
+			</div>
+			<br>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home">Home</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add a User</a></li>
+						<li><a href="#resultsPage" id="favorites" data-icon="star">Favorites</a></li>
+						<li><a href="#aboutPage" data-icon="info" data-iconpos="right">About Page</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Results Page-->
+		<div data-role="page" id="resultsPage">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Remember Who</h1>
+			</div>
+			<div>
+				<p>Search Users: <input type="search" data-filter="true"/></p>
+			</div>
+			<div>
+				<h2>Results...</h2>
+				<div id="displayResults">
+				</div>
+			</div>
+			<br>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home">Home</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add a User</a></li>
+						<li><a href="#resultsPage" id="favorites" data-icon="star">Favorites</a></li>
+						<li><a href="#aboutPage" data-icon="info" data-iconpos="right">About Page</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<script type="text/javascript" src="js/json.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
