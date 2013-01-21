@@ -1,6 +1,6 @@
 // Devin "Lauren" Elder
 // MIU Term 1301
-// Project 2
+// Project 3
 // 01/10/2013
 
 window.addEventListener("DOMContentLoaded", function() {
@@ -146,18 +146,18 @@ var getImage = function(genderType, oValue, makeSubList) {
 	makeSubList.appendChild(imageLi);
 	var newImgOne = document.createElement("img");
 	var newImgTwo = document.createElement("img");
-	var setSrcOne = newImgOne.setAttribute("src", "../img/" + genderType + ".png");
+	var setSrcOne = newImgOne.setAttribute("src", "img/" + genderType + ".png");
 	if (oValue === "Straight") {
-		var setSrcTwo = newImgTwo.setAttribute("src", "../img/Straight.png");
+		var setSrcTwo = newImgTwo.setAttribute("src", "img/Straight.png");
 	}
 	if (oValue === "Bisexual") {
-		var setSrcTwo = newImgTwo.setAttribute("src", "../img/Bisexual.png");
+		var setSrcTwo = newImgTwo.setAttribute("src", "img/Bisexual.png");
 	}
 	if (oValue === "Gay" && genderType === "Male") {
-		var setSrcTwo = newImgTwo.setAttribute("src", "../img/gayMale.png");
+		var setSrcTwo = newImgTwo.setAttribute("src", "img/gayMale.png");
 	}
 	if (oValue === "Gay" && genderType === "Female") {
-		var setSrcTwo = newImgTwo.setAttribute("src", "../img/gayFemale.png");
+		var setSrcTwo = newImgTwo.setAttribute("src", "img/gayFemale.png");
 	}
 	imageLi.appendChild(newImgOne);
 	imageLi.appendChild(newImgTwo);
