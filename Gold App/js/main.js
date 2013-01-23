@@ -14,12 +14,13 @@ window.addEventListener("DOMContentLoaded", function() {
 		return theElement;
 	};
 
-/* Display Slider Value Functions
+// Display Slider Value Functions
 	displaySlider = function(amount) {
 		var display = idValue("sliderDisplay");
+		display.style.display = "inline";
 		var sliderValue = amount
 		display.innerHTML = sliderValue;
-	};*/
+	};
 
 // Radio Button Functions
 	var getRadioGender = function() {
@@ -145,7 +146,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		};
 	};
 
-// Append Results Function
+/* Append Results Function
 	var appResults	= function(search, browseCat, browseVal, fav) {
 		//window.location.reload(idValue("#resultsPage"));
 		alert("Here");
@@ -181,6 +182,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		makeItemLinks(window.localStorage.key(i), linksLi);
 		};
 	};
+	*/
 
 // Get Image Function
 var getImage = function(genderType, oValue, makeSubList) {
