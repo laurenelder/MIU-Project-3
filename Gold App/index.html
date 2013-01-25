@@ -58,7 +58,7 @@
 				<h1>Remember Who</h1>
 			</div>
 			<nav>
-				<a href="index.html" id="home">Home</a>
+				<p><a href="#" id="clear" data-role="button">Clear All Users</a><a href="#" id="display" data-role="button">Display Users</a><a href="#addItem" id="Add_a_User" style="display:none;">Add a User</a></p>
 				<a href="#" id="clear">Clear All Users</a>
 				<a href="#" id="display">Display Users</a>
 				<a href="additem.html" id="Add_a_User" style="display:none;">Add a User</a>
@@ -71,19 +71,19 @@
 				<section>
 					<h3>General Information</h3>
 					<div data-role="fieldcontain">
-						<label for="uname">Username: </label>
+						<label for="uname">Username: (Required)</label>
 						<input type="text" name="uname" id="uname" />
 					</div>
 					<div data-role="fieldcontain">
-						<label for="age">Age: </label>
+						<label for="age">Age: (Required)</label>
 						<input type="text" name="age" id="age" />
 					</div>
 					<div data-role="fieldcontain">
-						<label for="city">City: </label>
+						<label for="city">City: (Required)</label>
 						<input type="text" name="city" id="city" />
 					</div>
 					<div data-role="fieldcontain">
-						<label for="wsite">Dating Website: </label>
+						<label for="wsite">Dating Website: (Required)</label>
 						<input type="text" name="wsite" id="wsite" />
 					</div>
 					<div data-role="fieldcontain">
@@ -210,7 +210,7 @@
 			<div>
 				<h2>About Links</h2>
 				<p><a href="#infoPage" data-role="button" data-icon="arrow-r" data-iconpos="right">Info Page</a></p>
-				<p><a href="subCatagories/orientationSubCatagory.html" data-role="button" data-icon="arrow-r" data-iconpos="right">Github Link</a></p>
+				<p><a href="https://github.com/laurenelder/MIU-Project-3" data-role="button" data-icon="arrow-r" data-iconpos="right">Github Link</a></p>
 				<p><a href="../Bronze App/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right">Bronze Application</a></p>
 				<p><a href="#homePage" data-role="button" data-icon="arrow-r" data-iconpos="right">Home Page</a></p>
 			</div>
@@ -219,13 +219,12 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="index.html" data-icon="home">Home</a></li>
-						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add a User</a></li>
+						<li><a href="#addItem" data-ajax="false" data-icon="plus">Add a User</a></li>
 						<li><a href="#resultsPage" id="favorites" data-icon="star">Favorites</a></li>
 						<li><a href="#aboutPage" data-icon="info" data-iconpos="right" class="ui-btn-active">About Page</a></li>
 					</ul>
 				</div>
 			</div>
-
 		</div>
 
 		<!-- Info Page-->
@@ -244,6 +243,14 @@
 				<p>Images Provided By...</p>
 				<p>Image courtesy of adamr / <a href="http://www.freedigitalphotos.net" target="_blank">FreeDigitalPhotos.net</a></p>
 				<p>Image courtesy of supakitmod / <a href="http://www.freedigitalphotos.net" target="_blank">FreeDigitalPhotos.net</a></p>
+				<p>Image courtesy of M - Pics / <a href="http://www.freedigitalphotos.net" target="_blank">FreeDigitalPhotos.net</a></p>
+				<p>Image courtesy of Carlos Porto / <a href="http://www.freedigitalphotos.net" target="_blank">FreeDigitalPhotos.net</a></p>
+				<p>Image courtesy of renjith krishnan / <a href="http://www.freedigitalphotos.net" target="_blank">FreeDigitalPhotos.net</a></p>
+				<p>Image courtesy of vorakorn / <a href="http://www.freedigitalphotos.net" target="_blank">FreeDigitalPhotos.net</a></p>
+				<p>Image courtesy of Boaz Yiftach / <a href="http://www.freedigitalphotos.net" target="_blank">FreeDigitalPhotos.net</a></p>
+				<p>Image courtesy of hinnamsaisuy / <a href="http://www.freedigitalphotos.net" target="_blank">FreeDigitalPhotos.net</a></p>
+				<p>Image courtesy of Jomphong / <a href="http://www.freedigitalphotos.net" target="_blank">FreeDigitalPhotos.net</a></p>
+				<p>Image courtesy of photostock / <a href="http://www.freedigitalphotos.net" target="_blank">FreeDigitalPhotos.net</a></p>
 			</article>
 			<br>
 			<div data-role="footer" data-position="fixed">
@@ -256,7 +263,6 @@
 					</ul>
 				</div>
 			</div>
-
 		</div>
 
 		<!-- Gender Subcategory Page-->
@@ -270,9 +276,19 @@
 			</div>
 			<div>
 				<h2>Gender</h2>
-				<ul data-role="listview" data-inset="true">
-				<li><a href="#resultsPage" id="browseMale" data-icon="arrow-r" data-iconpos="right"><img src="img/Male.png">Male</a></li>
-				<li><a href="#resultsPage" id="browseFemale" data-icon="arrow-r" data-iconpos="right"><img src="img/Female.png">Female</a></li>
+				<ul data-role="listview">
+				<li>
+					<a href="#resultsPage" id="browseMale">
+						<img src="img/maleThumbnail.png">
+						<h3>Male</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#resultsPage" id="browseFemale">
+						<img src="img/femaleThumbnail.png">
+						<h3>Female</h3>
+					</a>
+				</li>
 			</ul>
 			</div>
 			<br>
@@ -298,11 +314,34 @@
 			<div>
 				<p>Search Users: <input type="search" data-filter="true"/></p>
 			</div>
-			<div>
+			<div data-role="content">
 				<h2>Sexual Orientation</h2>
-				<p><a href="#resultsPage" id="browseStraight" data-role="button" data-icon="arrow-r" data-iconpos="right"><img src="img/Straight.png">Straight</a></p>
-				<p><a href="#resultsPage" id="browseBisexual" data-role="button" data-icon="arrow-r" data-iconpos="right"><img src="img/Bisexual.png">Bisexual</a></p>
-				<p><a href="#resultsPage" id="browseGay" data-role="button" data-icon="arrow-r" data-iconpos="right"><img src="img/gayMale.png"><img src="img/gayFemale.png">Gay</a></p>
+				<ul data-role="listview">
+				<li>
+					<a href="#resultsPage" id="browseStraight">
+						<img src="img/straightThumbnail.png">
+						<h3>Straight</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#resultsPage" id="browseBisexual">
+						<img src="img/bisexualThumbnail.png">
+						<h3>Bisexual</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#resultsPage" id="browseGayMale">
+						<img src="img/gayMaleThumbnail.png">
+						<h3>Gay Male</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#resultsPage" id="browseGayFemale">
+						<img src="img/gayFemaleThumbnail.png">
+						<h3>Gay Female</h3>
+					</a>
+				</li>
+				</ul>
 			</div>
 			<br>
 			<div data-role="footer" data-position="fixed">
@@ -327,10 +366,22 @@
 			<div>
 				<p>Search Users: <input type="search" data-filter="true"/></p>
 			</div>
-			<div>
+			<div data-role="content">
 				<h2>Children</h2>
-				<p><a href="#resultsPage" id="browseHasKids" data-role="button" data-icon="arrow-r" data-iconpos="right">Has Kids</a></p>
-				<p><a href="#resultsPage" id="browseWantsKids" data-role="button" data-icon="arrow-r" data-iconpos="right">Wants Kids</a></p>
+				<ul data-role="listview">
+					<li>
+						<a href="#resultsPage" id="browseHasKids">
+							<img src="img/hasKidsThumbnail.png">
+							<h3>Has Kids</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#resultsPage" id="browseWantsKids">
+							<img src="img/wantsKidsThumbnail.png">
+							<h3>Wants Kids</h3>
+						</a>
+					</li>
+				</ul>
 			</div>
 			<br>
 			<div data-role="footer" data-position="fixed">
@@ -353,16 +404,48 @@
 				<h1>Remember Who</h1>
 			</div>
 			<div>
-				<p>Search Users: <input type="search" data-filter="true"/></p>
+				<p>Search Users: <input type="search" /></p>
 			</div>
-			<div>
+			<div data-role="content">
 				<h2>Miscellaneous</h2>
-				<p><a href="#resultsPage" id="browseVehicle" data-role="button" data-icon="arrow-r" data-iconpos="right">Has Vehicle</a></p>
-				<p><a href="#resultsPage" id="browseInterests" data-role="button" data-icon="arrow-r" data-iconpos="right">Has Shared Interests</a></p>
-				<p><a href="#resultsPage" id="browseStable" data-role="button" data-icon="arrow-r" data-iconpos="right">Financially Stable</a></p>
-				<p><a href="#resultsPage" id="browseDrinks" data-role="button" data-icon="arrow-r" data-iconpos="right">Drinks</a></p>
-				<p><a href="#resultsPage" id="browseSmokes" data-role="button" data-icon="arrow-r" data-iconpos="right">Smokes</a></p>
-				<p><a href="#resultsPage" id="browsePets" data-role="button" data-icon="arrow-r" data-iconpos="right">Has Pets</a></p>
+				<ul data-role="listview">
+					<li>
+						<a href="#resultsPage" id="browseVehicle">
+							<img src="img/vehicleThumbnail.png">
+							<h3>Has Vehicle</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#resultsPage" id="browseInterests">
+							<img src="img/sharedInterestsThumbnail.png">
+							<h3>Has Shared Interests</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#resultsPage" id="browseStable">
+							<img src="img/financiallyStableThumbnail.png">
+							<h3>Financially Stable</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#resultsPage" id="browseDrinks">
+							<img src="img/drinksThumbnail.png">
+							<h3>Drinks</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#resultsPage" id="browseSmokes">
+							<img src="img/smokesThumbnail.png">
+							<h3>Smokes</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#resultsPage" id="browsePets">
+							<img src="img/hasPetsThumbnail.png">
+							<h3>Has Pets</h3>
+						</a>
+					</li>
+				</ul>
 			</div>
 			<br>
 			<div data-role="footer" data-position="fixed">
@@ -403,12 +486,12 @@
 					</ul>
 				</div>
 			</div>
-
 		</div>
 
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
 		<script type="text/javascript" src="js/json.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>-->
 	</body>
 </html>
